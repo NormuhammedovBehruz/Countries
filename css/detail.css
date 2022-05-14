@@ -1,0 +1,246 @@
+/* Global */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap");
+
+:root {
+    --body-bg: #f2f2f2;
+    --body-text: #222;
+    --header-bg: #fff;
+    --card-bg: #fff;
+    --bottom-bg: #222;
+    --form-bg: #fff;
+    --input-bg: #222;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    color: var(--body-text-color);
+    background-color: var(--body-bg);
+    font-weight: 300;
+    font-size: 14px;
+    height: 100%;
+    transition: background 0.3s;
+}
+
+.dark-mode {
+    --body-bg: #202c36;
+    --body-text-color: #f2f2f2;
+    --header-bg: #2b3844;
+    --rectangle-bg: #2b3844;
+    --card-bg: #2b3844;
+    --form-bg: #2b3844;
+    --bottom-bg: #fff;
+    --input-bg: #fff;
+}
+
+.container {
+    max-width: 1340px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Header */
+
+.site-header {
+    width: 100%;
+    background-color: var(--header-bg);
+}
+
+.site-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-heading {
+    width: 234px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.site-content-div {
+    display: flex;
+    align-items: center;
+}
+
+.site-img {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.site-span {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--body-text-color);
+}
+
+.rectangle {
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+/* Main */
+
+.main-content {
+    flex-grow: 1;
+}
+
+.hero {
+    margin-bottom: 261px;
+}
+
+.btn-back {
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px 39px 10px 33px;
+    margin-bottom: 80px;
+    border-radius: 6px;
+    background: transparent;
+    border: 0;
+    background-color: var(--rectangle-bg);
+    color: var(--input-bg);
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+}
+
+.hero-content-img {
+    display: flex;
+    width: 560px;
+    height: 400px;
+    margin-right: 120px;
+}
+
+.hero-content-2 {
+    display: flex;
+    flex-direction: column;
+    width: 598px;
+    height: 323px;
+}
+
+.hero-content-2-heading {
+    margin: 0;
+    margin-bottom: 23px;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.new {
+    display: flex;
+    margin-bottom: 68px;
+}
+
+.new2 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.heading {
+    margin: 0;
+    margin-right: 5px;
+    padding: 0;
+    font-weight: 400;
+    font-weight: 16px;
+    line-height: 32px;
+}
+
+.hero-content-p:not(:last-child) {
+    margin-right: 141px;
+}
+
+.fas {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-content-p-text {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-weight: 16px;
+    line-height: 32px;
+}
+
+.hero-content-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.hero-content-bottom-heading {
+    margin: 0;
+    margin-right: 15px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.hero-content-bottom-text {
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 4px 1px #979797;
+    padding: 5px 28px 4px 27px;
+    background-color: var(--card-bg);
+    text-decoration: none;
+    color: var(--input-bg);
+}
+
+.hero-content-bottom-text:last-child {
+    padding: 5px 10px;
+}
+
+.hero-content-bottom-text:not(:last-child) {
+    margin-right: 10px;
+}
+
+.owerlay {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    user-select: none;
+}
+
+.owerlay img {
+    height: 100px;
+    width: 100px;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,225 @@
+/* Global */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap");
+
+:root {
+    --body-bg: #f2f2f2;
+    --body-text: #222;
+    --header-bg: #fff;
+    --card-bg: #fff;
+    --button-bg: #222;
+    --form-bg: #fff;
+    --input-bg: #222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: var(--body-bg);
+    color: var(--body-text-color);
+    font-weight: 300;
+    font-size: 14px;
+    height: 100%;
+    transition: background 0.3s;
+}
+
+.dark-mode {
+    --body-bg: #202c36;
+    --body-text-color: #f2f2f2;
+    --header-bg: #2b3844;
+    --card-bg: #2b3844;
+    --form-bg: #2b3844;
+    --button-bg: #fff;
+    --input-bg: #fff;
+    --countries-bg: #fff;
+}
+
+.container {
+    max-width: 1340px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Header */
+
+.site-header {
+    background-color: var(--header-bg);
+    width: 100%;
+}
+
+.site-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-heading {
+    width: 234px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.site-content-div {
+    display: flex;
+    align-items: center;
+}
+
+.site-img {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.site-span {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--body-text-color);
+}
+
+/* Main */
+
+.main-content {
+    padding-top: 40px;
+}
+
+.new2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.select {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    padding: 14px 77px 14px 24px;
+    font-size: 14px;
+    color: var(--button-bg);
+    color: var(--button-bg);
+    background-color: var(--form-bg);
+    cursor: pointer;
+}
+
+.select-option {
+    font-size: 14px;
+    padding: 16px 124px 16px 24px;
+}
+
+.select-option:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.global-search {
+    margin-right: auto;
+}
+
+.global-input {
+    padding: 14px 270px 14px 74px;
+    border-radius: 5px;
+    border: 1px solid #f6f6f6;
+    background-color: var(--form-bg);
+    color: var(--input-bg);
+    border: 0;
+}
+
+.countries-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
+    gap: 72px;
+    margin-bottom: 45px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    max-width: 264px;
+    width: 100%;
+}
+
+.card-img {
+    margin-bottom: 24px;
+}
+
+.country-name {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 16px;
+    color: #000;
+    padding-left: 24px;
+    color: var(--body-text-color);
+}
+
+.card-list {
+    margin: 0;
+    list-style: none;
+    padding-left: 24px;
+    padding-bottom: 36px;
+}
+
+.infolist-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.hero-span {
+    font-size: 14px;
+}
+
+.hero-span:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.new-2 {
+    text-decoration: none;
+    color: var(--countries-bg);
+}
+
+.countries-heading {
+    margin: 0;
+    margin-left: 100px;
+}
+
+.owerlay {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    user-select: none;
+}
+
+.owerlay img {
+    height: 100px;
+    width: 100px;
+}
+
+.hidden {
+    display: none;
+}

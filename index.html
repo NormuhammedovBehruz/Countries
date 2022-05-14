@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countries</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <!-- Header -->
+
+  <header class="site-header">
+    <div class="site-header-container container">
+      <div class="site-header-content">
+        <h1 class="site-heading">
+          Where in the world?
+        </h1>
+        <button class="btn btn-mode">
+          <div class="site-content-div">
+            <img class="site-img" src="images/dark-icon.svg" alt="rasm" width="25" height="25" />
+            <span class="site-span">
+              Dark Mode
+            </span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+
+  <main class="main-content">
+    <section class="hero">
+      <div class="hero-content-container container">
+        <div class="hero-content">
+          <div class="new2">
+            <form class="global-search">
+              <input class="global-input" id="text" type="text" name="text" required placeholder="Search for a country…"
+                aria-label="Search for a country…" autocomplete="off" />
+            </form>
+
+            <select class="select" id="select-region">
+              <option class="select-option" value="filter-by-region">
+                Filter by Region
+              </option>
+              <option class="select-option" value="africa">Africa</option>
+              <option class="select-option" value="america">America</option>
+              <option class="select-option" value="asia">Asia</option>
+              <option class="select-option" value="europe">Europe</option>
+              <option class="select-option" value="oceania">Oceania</option>
+            </select>
+          </div>
+
+          <div class="countries-container"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="owerlay hidden">
+    <img src="images/loader.gif" alt="rasm" />
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
