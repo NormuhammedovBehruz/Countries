@@ -223,3 +223,69 @@ body {
 .hidden {
     display: none;
 }
+
+@media (max-width: 600px) {
+    .site-heading {
+        width: 234px;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .site-img {
+        margin-right: 10px;
+        width: 12px;
+        height: 11px;
+    }
+
+    .site-span {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        color: var(--body-text-color);
+    }
+
+    .new2 {
+        display: block;
+    }
+
+    .global-search {
+        margin-bottom: 40px;
+    }
+
+    .global-input {
+        padding: 14px 153px 14px 74px;
+        border-radius: 5px;
+        border: 1px solid #f6f6f6;
+        background-color: var(--form-bg);
+        color: var(--input-bg);
+        border: 0;
+        width: 100%;
+    }
+
+    .select {
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        padding: 14px 77px 14px 24px;
+        font-size: 12px;
+        color: var(--button-bg);
+        color: var(--button-bg);
+        background-color: var(--form-bg);
+        cursor: pointer;
+    }
+
+    .select-option {
+        font-size: 12px;
+        padding: 16px 124px 16px 24px;
+    }
+
+    .countries-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
+        gap: 72px;
+        margin-bottom: 45px;
+    }
+}
