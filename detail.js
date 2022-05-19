@@ -45,17 +45,18 @@ async function senRequest(url) {
 
 function showData(data) {
   const dataInfo = data[0]
+  const {flags, name, population, region, subregion, capital, currencies, languages} = dataInfo
 
-  img.setAttribute('src', `${dataInfo.flags.png}`)
-  title.textContent = `${dataInfo.name.common}`
-  detail.textContent = `${dataInfo.name.common}`
-  detail2.textContent = `${dataInfo.population}`
-  detail3.textContent = `${dataInfo.region}`
-  detail4.textContent = `${dataInfo.subregion}`
-  detail5.textContent = `${dataInfo.capital[0]}`
-  const objKeys = Object.values(dataInfo.currencies)
+  img.setAttribute('src', `${flags.png}`)
+  title.textContent = `${name.common}`
+  detail.textContent = `${name.common}`
+  detail2.textContent = `${population}`
+  detail3.textContent = `${region}`
+  detail4.textContent = `${subregion}`
+  detail5.textContent = `${capital[0]}`
+  const objKeys = Object.values(currencies)
   detail7.textContent = `${objKeys[0].name}`
-  detail8.textContent = `${Object.values(dataInfo.languages)[0]}`
+  detail8.textContent = `${Object.values(languages)[0]}`
 
 
   const bordersCont = document.querySelector('.hero-content-bottom')

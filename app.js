@@ -37,38 +37,39 @@ senRequest(api)
 
 function showData(data) {
     data.forEach((country) => {
+        const {name, region, flags, population, capital} = country
         const card = document.createElement('div')
         card.classList.add('card')
-        card.setAttribute('id', `${country.name.common}`)
-        card.setAttribute('data-set', `${country.region}`)
+        card.setAttribute('id', `${name.common}`)
+        card.setAttribute('data-set', `${region}`)
         card.innerHTML = `
-        <img class="card-img" src="${country.flags.png}" alt="rasm" width="264" height="160">
+        <img class="card-img" src="${flags.png}" alt="rasm" width="264" height="160">
 
-        <h3 class="country-name">${country.name.common}</h3>
+        <h3 class="country-name">${name.common}</h3>
 
         <ul class="card-list">
             <li class="infolist-item">
                 <div>
                     <span class="hero-span"><b>Population:</b></span>
-                    <span class="hero-span">${country.population}</span>
+                    <span class="hero-span">${population}</span>
                 </div>
             </li>
             <li class="infolist-item">
                 <div>
                     <span><b>Region:</b></span>
-                    <span>${country.region}</span>
+                    <span>${region}</span>
                 </div>
             </li>
             <li class="infolist-item">
                 <div>
                     <span><b>Capital:</b></span>
-                    <span>${country.capital ? country.capital[0] : 'No Capital'}</span>
+                    <span>${capital ? capital[0] : 'No Capital'}</span>
                 </div>
             </li>
             
         </ul>
 
-        <a class='new-2' href='./detail.html?q=${country.name.common}'>
+        <a class='new-2' href='./detail.html?q=${name.common}'>
         <h3 class='countries-heading'>Country information</h3>
         </a>
         `
